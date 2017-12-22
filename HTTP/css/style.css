@@ -1,0 +1,208 @@
+/*
+  Color palette:
+  #130912 - dark purple
+  #3E1C34 - purple
+  #602748 - light purple
+  #B14622 - orange
+  #F7921E - yellow
+*/
+
+body {
+  background-color:#130912;
+}
+
+h1, h2 {
+  color:#ffffff;
+}
+
+table {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+}
+
+thead, tbody, tr, td, th {
+  display: block;
+  text-align: center;
+}
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+thead th {
+    height: 40px;
+}
+
+tbody {
+    height: 200px;
+    overflow-y: auto;
+}
+
+tbody::-webkit-scrollbar {
+  width: 0.3em;
+
+}
+
+tbody::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+tbody::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+
+
+tbody td, thead th {
+  width: 50%;
+  float: left;
+}
+
+#carts-table tbody td,
+#carts-table thead th {
+  width: 33.333%;
+  float: left;
+}
+
+.content {
+  margin: 70px 0;
+}
+
+.container h1 {
+  text-align: center;
+  color:#FFFFFF;
+}
+
+.container h3 {
+  text-align: center;
+  color:#B14622;
+}
+
+.fnf404 {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.fnf404 .btn {
+  width: 200px;
+  background-color: #B14622;
+  color:#ffffff;
+}
+
+.items-header {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.items-header h2 {
+  margin-top: 0px;
+  display:inline-block;
+}
+
+.items-header .btn {
+  background-color:#B14622;
+  color:#fff;
+  float:right;
+  display:inline-block;
+}
+
+.three-btns {
+  display: inline-block;
+}
+
+.three-btns .btn {
+  color:#fff;
+}
+
+.two-btns {
+  display: inline-block;
+}
+
+.two-btns .btn {
+  color:#fff;
+}
+
+.yellow {
+  background-color:#F7921E;
+}
+
+.green {
+  background-color:#65a360;
+}
+
+.red {
+  background-color:#a34747;
+}
+
+#success-alert {
+  display: none;
+  margin-top: 20px;
+}
+
+#danger-alert {
+  display: none;
+  margin-top: 20px;
+}
+
+.container {
+  width: 50%;
+}
+
+.cart {
+  float:right;
+}
+
+.cart input {
+  margin:8px 0;
+}
+
+.cart .btn {
+  margin-right: 10px;
+}
+
+.tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tip .tiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: rgba(66, 66, 66, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+
+  /* Position the tip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tip:hover .tiptext {
+    visibility: visible;
+}
+
+.cart-filter {
+  width: 40%;
+  display: inline-block;
+}
+
+.filter {
+  margin: 0 0 10px 0;
+}
+
+.filter>#getItemsListAsClient {
+  margin: 0 0 0 10px;
+}

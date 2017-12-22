@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Leader Redirection Modal  -->
+    <div class="modal fade" id="leaderRedirectionModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <center><h4 class="modal-title"><strong>Oops! This is not the leader</strong></h4></center>
+          </div>
+          <div class="modal-body">
+            <center><p>This server is not the current leader. You will be redirected to the leader in <strong><span id="time">5</span></strong></p></center>
+          </div>
+          <div class="modal-footer">
+            <center><button type="button" class="btn btn-default" id="redirectBtn">Redirect Now</button></center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h1>
+        <span
+         class="txt-rotate"
+         data-period="1000"
+         data-rotate='["01011001", "Raft-Shop"]'>
+        </span>
+      </h1>
+
+      <h3>Admin Panel</h3>
+
+      <div class="content">
+        <div class="col-md-6 items">
+          <div class="items-header">
+            <h2>Items</h2>
+            <button class="btn" id="getItemsListAsAdmin">Display All</button>
+          </div>
+
+          <div class="items-table"> <!-- Items list-->
+            <table class="table table-hover" id="items-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-md-6 cart">
+          <center>
+            <h2>Edit List</h2>
+          </center>
+          <input type="text" class="form-control" placeholder="Item name" id="a_i_name"/>
+          <input type="text" class="form-control" placeholder="Quantity" id="a_i_qnt"/>
+          <div class="two-btns">
+            <button class="btn green" id="addItemToList">Add</button>
+            <button class="btn red tip" id="removeItemFromList">Remove <!--<span class="tiptext">For values greater or equal vailable quantity the item will be deleted</span>--></button>
+          </div>
+
+          <!-- Responses -->
+          <div class="alert alert-success" id="success-alert">
+              <button type="button" class="close" data-dismiss="alert">x</button>
+              <strong>Good!</strong> <p>Updated correctly</p>
+          </div>
+          <div class="alert alert-danger" id="danger-alert">
+              <button type="button" class="close" data-dismiss="alert">x</button>
+              <strong>Attention!</strong> <p>Field format incorrect.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
