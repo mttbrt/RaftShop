@@ -1,4 +1,4 @@
-# Raft implementation in Jolie
+# Raft Distributed Consensus Algorithm in Jolie
 
 **RaftShop**
 by
