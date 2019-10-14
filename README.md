@@ -2,7 +2,7 @@
 
 **RaftShop**
 by
-<a rel="author"> M. Berti</a>, <a rel="author">A. Cesco</a>, and <a rel="author"> S. Fiorilla</a>
+<a href="https://github.com/methk" rel="author"> M. Berti</a>, <a rel="author">A. Cesco</a>, and <a rel="author"> S. Fiorilla</a>
 @
 [Department of Computer Science and Engineering - University of Bologna](https://disi.unibo.it/en).
 
